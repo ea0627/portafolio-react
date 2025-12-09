@@ -39,7 +39,7 @@ El portafolio implementa un sistema de theming basado en:
 
 ## 🧱 Arquitectura del Proyecto
 
-```
+```bash
 src/
 ├── assets/
 │ ├── images/
@@ -62,7 +62,7 @@ src/
 │ └── variables.css
 ├── App.jsx
 └── main.jsx
-
+```
 
 ---
 
