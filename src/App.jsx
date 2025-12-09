@@ -1,7 +1,5 @@
-import ThemeToggle from "./components/ThemeToggle";
-
 // Más adelante agregaremos estos componentes
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 // import Hero from "./components/Hero/Hero";
 // import About from "./components/About/About";
 // import Skills from "./components/Skills/Skills";
@@ -12,8 +10,8 @@ function App() {
   return (
     <>
       {/* Botón Tema Claro / Oscuro */}
-      <ThemeToggle />
-
+      <Navbar />
+      
       {/* Mientras no tengamos secciones, ponemos un texto temporal */}
       <h1 style={{ padding: "40px", textAlign: "center" }}>
         Portafolio de Eduardo Amaya 🚀

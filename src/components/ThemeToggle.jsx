@@ -22,14 +22,10 @@ const ThemeToggle = () => {
                 padding: "10px 14px",
                 borderRadius: "8px",
                 cursor: "pointer",
-                position: "fixed",
-                top: "20px",
-                right: "20px",
-                zIndex: 999,
                 transition: "0.3s ease",
             }}
         >
-        {theme === "light" ? <BsMoon size={20} /> : <BsSun size={20} />}
+            {theme === "light" ? <BsMoon size={20} /> : <BsSun size={20} />}
         </button>
     );
 };
