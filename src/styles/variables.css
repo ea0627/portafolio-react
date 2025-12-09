@@ -1,0 +1,19 @@
+:root {
+  /* Default = Dark Mode */
+  --bg-color: #0A0A0A;
+  --text-color: #F2F4F8;
+  --accent-color: #00AEEF;
+  --secondary-color: #002F5E;
+  --highlight-color: #38C7FF;
+
+  --font-primary: 'Poppins', sans-serif;
+}
+
+/* Light Mode (Williams Day Mode) */
+.light-theme {
+  --bg-color: #F2F4F8;
+  --text-color: #002F5E;
+  --accent-color: #00AEEF;
+  --secondary-color: #002F5E;
+  --highlight-color: #38C7FF;
+}
