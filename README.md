@@ -37,6 +37,31 @@ El portafolio implementa un sistema de theming basado en:
 
 ---
 
+🧭 Navbar Responsivo — NUEVA ACTUALIZACIÓN 🚀
+
+Se implementó un navbar con diseño profesional:
+
+✔ Versión escritorio
+
+    Layout con glassmorphism
+    Links con subrayado animado
+    Toggle de tema integrado en el nav
+    Scroll con efecto oscuro (scrolled state)
+
+✔ Versión móvil
+
+    Menú lateral tipo drawer
+    Animación suave + overlay difuminado
+    Botón hamburguesa minimalista
+    Botón cerrar (✕) con animación
+    Toggle reubicado en la cabecera del menú
+    Enlaces con hover desplazado
+    Organización visual moderna y limpia
+
+Este Navbar mejora radicalmente la experiencia UX/UI del proyecto.
+
+---
+
 ## 🧱 Arquitectura del Proyecto
 
 ```bash
@@ -95,24 +120,27 @@ src/
 
 ## 🚧 Estado del Proyecto
 
-### ✔ Implementado hasta ahora:
-- Configuración base con Vite  
-- Arquitectura modular  
-- Tema claro/oscuro  
-- Diseño base global  
-- Deploy inicial en Vercel  
-- Integración con GitHub (CI/CD)
+✔ Implementado hasta ahora
 
-### 🔜 Próximos pasos:
-- Navbar con diseño Williams F1  
-- Hero animado  
-- About + Skills  
-- Projects dinámicos (JSON/GitHub API)  
-- Contact con EmailJS  
-- Animaciones Framer Motion  
-- Footer profesional  
+    Configuración base con Vite
+    Arquitectura modular
+    Modo claro/oscuro
+    Theme Toggle funcional
+    Navbar responsivo completo (escritorio + móvil)
+    Animaciones base de UI
+    Deploy activo en Vercel
+    Sincronización CI/CD con GitHub
 
 ---
+
+🔜 Próximos pasos
+
+    Hero animado estilo Williams F1
+    Sección About + Skills
+    Projects dinámicos con JSON o GitHub API
+    Formulario de contacto con EmailJS
+    Footer profesional
+    Animaciones globales con Framer Motion
 
 ## 🧪 Cómo Ejecutar el Proyecto
 
@@ -145,11 +173,9 @@ Versión en desarrollo:
 
 Este proyecto forma parte de mi proceso de aprendizaje profesional con:
 
-TripleTen — Programa de Desarrollo Web
-
-Alura Latam
-
-Oracle Next Education (ONE) — G6
+    TripleTen — Programa de Desarrollo Web
+    Alura Latam
+    Oracle Next Education (ONE) — G6
 
 Estas formaciones han sido clave para fortalecer mi base técnica, buenas prácticas y mentalidad de crecimiento.
 
@@ -157,8 +183,8 @@ Estas formaciones han sido clave para fortalecer mi base técnica, buenas práct
 
 Eduardo Amaya
 Desarrollador Front-End
-GitHub: https://github.com/ea0627
 
+GitHub: https://github.com/ea0627
 LinkedIn: https://www.linkedin.com/in/eduardo-amaya-m/
 
 ⭐ Si te gusta este proyecto…
