@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo -->
+  <rect width="512" height="512" fill="#002F5E"></rect>
+  
+  <!-- E Minimalista Geométrica -->
+  <!-- Bloque superior -->
+  <rect x="140" y="140" width="230" height="50" fill="#00AEEF"></rect>
+  
+  <!-- Bloque medio -->
+  <rect x="140" y="230" width="180" height="50" fill="#00AEEF"></rect>
+
+  <!-- Bloque inferior -->
+  <rect x="140" y="320" width="230" height="50" fill="#00AEEF"></rect>
+</svg>
