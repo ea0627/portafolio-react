@@ -1,6 +1,6 @@
 // Más adelante agregaremos estos componentes
 import Navbar from "./components/Navbar/Navbar";
-// import Hero from "./components/Hero/Hero";
+import Hero from "./components/Hero/Hero";
 // import About from "./components/About/About";
 // import Skills from "./components/Skills/Skills";
 // import Projects from "./components/Projects/Projects";
@@ -11,7 +11,7 @@ function App() {
     <>
       {/* Botón Tema Claro / Oscuro */}
       <Navbar />
-      
+      <Hero />
       {/* Mientras no tengamos secciones, ponemos un texto temporal */}
       <h1 style={{ padding: "40px", textAlign: "center" }}>
         Portafolio de Eduardo Amaya 🚀

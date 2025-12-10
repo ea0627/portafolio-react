@@ -1,0 +1,231 @@
+/* ============================= */
+/* ANIMACIONES DE ENTRADA */
+/* ============================= */
+
+@keyframes fadeSlideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+  animation: fadeSlideLeft 0.8s ease forwards;
+  transition: text-shadow 0.15s ease-out;
+  text-shadow: 0 0 6px rgba(0, 174, 255, 0.35);
+}
+
+.hero-subtitle {
+  animation: fadeSlideLeft 1s ease forwards;
+}
+
+.hero-description {
+  opacity: 0;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-buttons {
+  opacity: 0;
+  animation: fadeUp 1.4s ease forwards;
+}
+
+
+/* ============================= */
+/* SECCIÓN HERO BANNER */
+/* ============================= */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+
+    background-image: url("/hero.png");
+    background-attachment: fixed; /* desktop */
+    background-size: cover;
+    background-position: 0px 0px; /* el JS controla esta posición */
+    background-repeat: no-repeat;
+
+    transition: background-position 0.2s ease-out;
+
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+
+    color: var(--text-color);
+
+    /* efectos dinámicos controlados por JS */
+    filter: brightness(1) blur(0px);
+    transition: filter 0.25s ease-out;
+}
+
+/* Overlay oscuro */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.4) 40%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    z-index: 1;
+}
+
+.hero-title:hover {
+    text-shadow: 0 0 8px rgba(0, 174, 255, 0.7),
+                 0 0 15px rgba(0, 174, 255, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.hero-subtitle:hover {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.7),
+                 0 0 12px rgba(0, 174, 255, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+
+.btn-primary,
+.btn-secondary {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover con glow */
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px rgba(0, 174, 255, 0.7),
+                0 0 22px rgba(0, 174, 255, 0.4);
+}
+
+/* Animación de clic */
+.btn-primary:active,
+.btn-secondary:active {
+    transform: scale(0.97);
+    box-shadow: none;
+}
+
+
+.hero-content:hover {
+    filter: drop-shadow(0 0 12px rgba(0, 174, 255, 0.35));
+    transition: filter 0.3s ease-in-out;
+}
+
+
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 550px;
+}
+
+/* TEXTOS */
+.banner-content h1 {
+  font-size: 3.8rem;
+  color: var(--accent-color);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.banner-content h1 span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.banner-content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  max-width: 450px;
+}
+
+/* BOTONES */
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  padding: 0.9rem 1.8rem;
+  background: var(--accent-color);
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  padding: 0.9rem 1.8rem;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .hero-banner {
+    justify-content: center;
+    padding: 0 2rem;
+    text-align: center;
+    background-attachment: scroll; /* mobile no usa fixed */
+  }
+
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+
+  .banner-content h1 span {
+    font-size: 1.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-banner {
+    height: 100vh;
+  }
+
+  .banner-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .banner-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================= */
+/* FIX CRÍTICO: mantener la imagen CENTRADA en mobile */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .hero-banner {
+    background-position: center !important;
+    background-attachment: scroll !important;
+  }
+}
