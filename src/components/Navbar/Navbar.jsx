@@ -17,13 +17,13 @@ const Navbar = () => {
     return (
         <>
             <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-                <div className="logo">E.A.</div>
+                <a href="#hero" className="logo">E.A.</a>
 
                 <ul className="navLinks">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
 
                 <div className="toggleWrapper">
@@ -60,10 +60,10 @@ const Navbar = () => {
                 </div>
 
                 {/* Enlaces */}
-                <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-                <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
-                <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-                <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+                <a href="#about" onClick={() => setMenuOpen(false)}>Sobre mí</a>
+                <a href="#skills" onClick={() => setMenuOpen(false)}>Habilidades</a>
+                <a href="#projects" onClick={() => setMenuOpen(false)}>Proyectos</a>
+                <a href="#contact" onClick={() => setMenuOpen(false)}>Contacto</a>
 
             </div>
         </>

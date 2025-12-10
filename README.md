@@ -37,9 +37,34 @@ El portafolio implementa un sistema de theming basado en:
 
 ---
 
-🧭 Seccion HERO — NUEVA ACTUALIZACIÓN 🚀
+🏎️ Avance Actual del Proyecto
 
-Se implementó un navbar con diseño profesional:
+Hasta hoy, el portafolio incluye:
+
+✅ Navbar responsivo estilo F1
+
+    Glassmorphism
+    Modo mobile con menú lateral animado
+    Botón de modo claro/oscuro
+    Logo navegable hacia el Hero
+
+✅ Hero Banner Cinematográfico
+
+    Imagen full-width
+    Parallax dinámico
+    Efecto de brillo y blur según scroll
+    Animaciones de entrada
+    Botones principales
+
+✅ Sección About — Ficha Técnica
+
+    Inspirada en paneles técnicos de ingeniería F1:
+    Fondo con parallax
+    Overlay para lectura óptima
+    Foto con glow técnico
+    Texto profesional
+    Scroll Reveal al estilo sitios premium
+    Tarjetas con efectos glass y hover animado
 
 ✔ Versión escritorio
 
@@ -133,13 +158,19 @@ src/
 
 ---
 
-🔜 Próximos pasos
+🚧 Próximos Pasos
 
-    Sección About + Skills
-    Projects dinámicos con JSON o GitHub API
-    Formulario de contacto con EmailJS
-    Footer profesional
-    Animaciones globales con Framer Motion
+    🔜 Skills Section
+    Tarjetas dinámicas tipo telemetría con barras animadas.
+
+    🔜 Projects Section
+    Integración con GitHub API o JSON local + tarjetas interactivas F1-style.
+
+    🔜 Contact Section
+    Formulario con EmailJS y diseño futurista.
+
+    🔜 Footer técnico
+    Estilo minimalista, con líneas y acentos en cyan.
 
 ## 🧪 Cómo Ejecutar el Proyecto
 

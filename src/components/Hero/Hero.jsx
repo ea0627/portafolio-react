@@ -63,7 +63,7 @@ const Hero = () => {
 
 
     return (
-        <section className="hero hero-banner">
+        <section id="hero" className="hero hero-banner">
             <div className="hero-overlay"></div>
 
             <div className="hero-content banner-content hero-text">
