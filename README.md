@@ -37,7 +37,7 @@ El portafolio implementa un sistema de theming basado en:
 
 ---
 
-🧭 Navbar Responsivo — NUEVA ACTUALIZACIÓN 🚀
+🧭 Seccion HERO — NUEVA ACTUALIZACIÓN 🚀
 
 Se implementó un navbar con diseño profesional:
 
@@ -135,7 +135,6 @@ src/
 
 🔜 Próximos pasos
 
-    Hero animado estilo Williams F1
     Sección About + Skills
     Projects dinámicos con JSON o GitHub API
     Formulario de contacto con EmailJS
@@ -167,7 +166,7 @@ npm run build
 🌐 Deploy en Vercel
 
 Versión en desarrollo:
-👉 https://portafolio-react-alpha-three.vercel.app/
+👉 https://portafolio-ea.vercel.app
 
 🎓 Formaciones Relacionadas
 
