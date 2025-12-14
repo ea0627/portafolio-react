@@ -1,0 +1,271 @@
+/* ================================
+    ANIMACIONES DE ENTRADA (F1 REVEAL)
+   ================================ */
+
+@keyframes projectReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(4px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* ================================
+    SECCIÓN GENERAL
+   ================================ */
+
+.projects-section {
+    position: relative;
+    width: 100%;
+    padding: 6rem 3rem;
+
+    /* Puedes cambiar el background luego */
+    background-image: url('/skills-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* Overlay técnico */
+.projects-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    z-index: 1;
+}
+
+.light-theme .projects-overlay {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+/* Contenedor principal */
+.projects-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--accent-color);
+    margin-bottom: 3rem;
+}
+
+/* Loader */
+.projects-loading {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+/* ================================
+    GRID DE PROYECTOS
+   ================================ */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2rem;
+}
+
+/* ================================
+    TARJETA INDIVIDUAL (F1 PANEL)
+   ================================ */
+
+.project-card {
+    position: relative;
+    opacity: 0;
+    animation: projectReveal 0.8s ease forwards;
+
+    background: rgba(10, 10, 10, 0.35);
+    border: 1px solid rgba(56, 199, 255, 0.3);
+    padding: 1.5rem;
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Efecto de luz interna al hover */
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at 30% -20%,
+        rgba(0, 174, 255, 0.15),
+        transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* Hover principal */
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(56, 199, 255, 0.45);
+}
+
+/* ================================
+    CONTENIDO DE LA TARJETA
+   ================================ */
+
+.project-title {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    margin-bottom: 0.6rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Línea técnica animada */
+.project-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.project-card:hover .project-title::after {
+    width: 100%;
+}
+
+.project-description {
+    opacity: 0.85;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Tags de tecnologías */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* BADGES DE TELEMETRÍA */
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    background: rgba(56, 199, 255, 0.15);
+    border: 1px solid rgba(56, 199, 255, 0.4);
+    color: var(--accent-color);
+
+    backdrop-filter: blur(4px);
+}
+
+.badge-stars {
+    background: rgba(255, 215, 0, 0.25);
+    border-color: rgba(255, 215, 0, 0.4);
+    color: #ffd700;
+}
+
+.badge-updated {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: var(--text-color);
+}
+
+.light-theme .badge-updated {
+    background: rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+
+.tech-pill {
+    background: rgba(56, 199, 255, 0.2);
+    border: 1px solid rgba(56, 199, 255, 0.4);
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+}
+
+/* ================================
+    BOTONES
+   ================================ */
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-project {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: var(--accent-color);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-project:hover {
+    background: #38c7ff;
+}
+
+.btn-project.secondary {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-project.secondary:hover {
+    background: rgba(0, 174, 255, 0.2);
+    color: #fff;
+}
+
+/* ================================
+    RESPONSIVE
+   ================================ */
+
+@media (max-width: 500px) {
+    .projects-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .projects-title {
+        font-size: 2.2rem;
+    }
+}
