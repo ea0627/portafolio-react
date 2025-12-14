@@ -8,111 +8,115 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
-
-Portafolio profesional desarrollado con **React + Vite**, diseñado con enfoque modular, alto rendimiento y una identidad visual inspirada en la escudería **Williams F1**.  
-Integra un sistema de **dark/light mode**, CI/CD con **Vercel**, y una arquitectura escalable pensada para crecer con nuevos proyectos, animaciones y APIs.
-
----
-
-## 🏎️ Diseño Inspirado en Williams F1
-Este proyecto utiliza una paleta inspirada en el equipo Williams F1:
-
-- **Cyan:** #00AEEF  
-- **Dark Blue:** #002F5E  
-- **Soft White:** #F2F4F8  
-- **Black:** #0A0A0A  
-- **Sky Blue:** #38C7FF  
-
-Toda la UI está construida con estos colores, adaptándose automáticamente según el modo día/noche.
+Portafolio profesional construido con **React + Vite**, inspirado en la estética moderna, limpia y técnica de la escudería **Williams F1**.  
+Diseñado para ofrecer una experiencia visual cuidada, animaciones suaves, modo claro/oscuro, arquitectura escalable y despliegue automático con Vercel.
 
 ---
 
-## 🌗 Modo Claro / Oscuro (Theme Toggle)
-El portafolio implementa un sistema de theming basado en:
+# 🏎️ Identidad Visual — Inspirado en Williams F1
+
+El diseño sigue una línea estética de ingeniería, precisión y telemetría:
+
+- **Cyan:** `#00AEEF`  
+- **Dark Blue:** `#002F5E`  
+- **Soft White:** `#F2F4F8`  
+- **Black:** `#0A0A0A`  
+- **Sky Blue:** `#38C7FF`
+
+---
+
+# 🌗 Modo Claro / Oscuro Avanzado
+
+El proyecto utiliza:
 
 - Variables CSS dinámicas  
 - Clase global `.light-theme`  
-- React Hooks para manejar estado  
-- Persistencia visual elegante  
+- Persistencia estética coherente  
+- Ajustes automáticos de contraste  
+- Efectos visuales adaptados a cada modo
+
+También se integran ajustes inteligentes por sección:
+
+### ✔ Hero  
+Brillo y blur ajustados según scroll + corrección especial para light mode.
+
+### ✔ About  
+Parallax controlado, overlay técnico y lectura perfecta sin perder estética.
+
+### ✔ Footer  
+Cambio automático de contraste e iconos legibles en ambos modos.
 
 ---
 
-🏎️ Avance Actual del Proyecto
+# 🏁 Avance Actual del Proyecto
 
-Hasta hoy, el portafolio incluye:
+## ✔ Navbar Profesional F1-Style
 
-✅ Navbar responsivo estilo F1
-
-    Glassmorphism
-    Modo mobile con menú lateral animado
-    Botón de modo claro/oscuro
-    Logo navegable hacia el Hero
-
-✅ Hero Banner Cinematográfico
-
-    Imagen full-width
-    Parallax dinámico
-    Efecto de brillo y blur según scroll
-    Animaciones de entrada
-    Botones principales
-
-✅ Sección About — Ficha Técnica
-
-    Inspirada en paneles técnicos de ingeniería F1:
-    Fondo con parallax
-    Overlay para lectura óptima
-    Foto con glow técnico
-    Texto profesional
-    Scroll Reveal al estilo sitios premium
-    Tarjetas con efectos glass y hover animado
-
-✔ Versión escritorio
-
-    Layout con glassmorphism
-    Links con subrayado animado
-    Toggle de tema integrado en el nav
-    Scroll con efecto oscuro (scrolled state)
-
-✔ Versión móvil
-
-    Menú lateral tipo drawer
-    Animación suave + overlay difuminado
-    Botón hamburguesa minimalista
-    Botón cerrar (✕) con animación
-    Toggle reubicado en la cabecera del menú
-    Enlaces con hover desplazado
-    Organización visual moderna y limpia
-
-Este Navbar mejora radicalmente la experiencia UX/UI del proyecto.
+- Diseño translucido + glassmorphism  
+- Menú móvil tipo drawer con overlay  
+- Toggle de modo claro/oscuro  
+- Logo navegable hacia el Hero  
+- Animación al hacer scroll (shrink + shadow técnica)
 
 ---
 
-## 🧱 Arquitectura del Proyecto
+## ✔ Hero Cinematográfico con Interacción Realista
+
+- Imagen full-width optimizada  
+- Parallax inteligente (desktop) y centrado estable (mobile)  
+- Blur + brillo dinámico según scroll  
+- Overlay adaptable a light/dark mode  
+- Títulos con **efecto glow reactivo al mouse**  
+- Animaciones de entrada para copy + botones  
+
+---
+
+## ✔ Sección About — Ficha Técnica
+
+- Fondo técnico con parallax suave  
+- Overlay inteligente para mejorar contraste  
+- Tarjetas tipo panel de ingeniería  
+- Animaciones por delay + scroll reveal  
+- Fotografía con borde cyan y glow técnico  
+- Estética alineada a dashboards de telemetría
+
+---
+
+## ✔ Footer Moderno
+
+- Línea superior estilo Williams  
+- Íconos interactivos de redes  
+- Soporte light/dark mode  
+- Botón "Back to Top" animado  
+- Diseño minimalista y coherente
+
+---
+
+# 🧱 Arquitectura del Proyecto
 
 ```bash
 src/
 ├── assets/
-│ ├── images/
-│ └── icons/
+│   ├── images/
+│   └── icons/
 ├── components/
-│ ├── Navbar/
-│ ├── Hero/
-│ ├── About/
-│ ├── Skills/
-│ ├── Projects/
-│ └── Contact/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── About/
+│   ├── Skills/
+│   ├── Projects/
+│   └── Contact/
 ├── data/
-│ └── projects.json
+│   └── projects.json
 ├── hooks/
-│ └── useFetchProjects.js
+│   └── useFetchProjects.js
 ├── utils/
-│ └── animations.js
+│   └── animations.js
 ├── styles/
-│ ├── global.css
-│ └── variables.css
+│   ├── global.css
+│   └── variables.css
 ├── App.jsx
 └── main.jsx
-```
 
 ---
 
@@ -169,8 +173,8 @@ src/
     🔜 Contact Section
     Formulario con EmailJS y diseño futurista.
 
-    🔜 Footer técnico
-    Estilo minimalista, con líneas y acentos en cyan.
+    🔜 Animaciones Globales
+    Microinteracciones F1-style con Framer Motion.
 
 ## 🧪 Cómo Ejecutar el Proyecto
 
