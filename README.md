@@ -1,100 +1,130 @@
-<h1 align="center">🚀 Portafolio React — Eduardo Amaya</h1>
+<h1 align="center">🚀 Portafolio React — Eduardo Amaya</h1> <p align="center"> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /> </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</p>
-
-Portafolio profesional construido con **React + Vite**, inspirado en la estética moderna, limpia y técnica de la escudería **Williams F1**.  
+Portafolio profesional construido con React + Vite, inspirado en la estética moderna, limpia y técnica de la escudería Williams F1.
 Diseñado para ofrecer una experiencia visual cuidada, animaciones suaves, modo claro/oscuro, arquitectura escalable y despliegue automático con Vercel.
 
----
-
-# 🏎️ Identidad Visual — Inspirado en Williams F1
+🏎️ Identidad Visual — Inspirado en Williams F1
 
 El diseño sigue una línea estética de ingeniería, precisión y telemetría:
 
-- **Cyan:** `#00AEEF`  
-- **Dark Blue:** `#002F5E`  
-- **Soft White:** `#F2F4F8`  
-- **Black:** `#0A0A0A`  
-- **Sky Blue:** `#38C7FF`
+Cyan: #00AEEF
 
----
+Dark Blue: #002F5E
 
-# 🌗 Modo Claro / Oscuro Avanzado
+Soft White: #F2F4F8
+
+Black: #0A0A0A
+
+Sky Blue: #38C7FF
+
+🌗 Modo Claro / Oscuro Avanzado
 
 El proyecto utiliza:
 
-- Variables CSS dinámicas  
-- Clase global `.light-theme`  
-- Persistencia estética coherente  
-- Ajustes automáticos de contraste  
-- Efectos visuales adaptados a cada modo
+Variables CSS dinámicas
 
-También se integran ajustes inteligentes por sección:
+Clase global .light-theme
 
-### ✔ Hero  
-Brillo y blur ajustados según scroll + corrección especial para light mode.
+Persistencia estética coherente
 
-### ✔ About  
-Parallax controlado, overlay técnico y lectura perfecta sin perder estética.
+Ajustes automáticos de contraste
 
-### ✔ Footer  
-Cambio automático de contraste e iconos legibles en ambos modos.
+Overlays inteligentes para cada sección
 
----
+Microinteracciones visuales según el modo
 
-# 🏁 Avance Actual del Proyecto
+Ajustes clave:
 
-## ✔ Navbar Profesional F1-Style
+✔ Hero
 
-- Diseño translucido + glassmorphism  
-- Menú móvil tipo drawer con overlay  
-- Toggle de modo claro/oscuro  
-- Logo navegable hacia el Hero  
-- Animación al hacer scroll (shrink + shadow técnica)
+Brillo y blur según scroll, con contraste especial para modo claro.
 
----
+✔ About
 
-## ✔ Hero Cinematográfico con Interacción Realista
+Overlay técnico y fondo con parallax optimizado.
 
-- Imagen full-width optimizada  
-- Parallax inteligente (desktop) y centrado estable (mobile)  
-- Blur + brillo dinámico según scroll  
-- Overlay adaptable a light/dark mode  
-- Títulos con **efecto glow reactivo al mouse**  
-- Animaciones de entrada para copy + botones  
+✔ Skills
 
----
+Fondo técnico con parallax y capa de lectura clara.
 
-## ✔ Sección About — Ficha Técnica
+✔ Footer
 
-- Fondo técnico con parallax suave  
-- Overlay inteligente para mejorar contraste  
-- Tarjetas tipo panel de ingeniería  
-- Animaciones por delay + scroll reveal  
-- Fotografía con borde cyan y glow técnico  
-- Estética alineada a dashboards de telemetría
+Contraste automático e iconos adaptados.
 
----
+🏁 Avance Actual del Proyecto
+✔ Navbar Profesional F1-Style
 
-## ✔ Footer Moderno
+Diseño translúcido + glassmorphism
 
-- Línea superior estilo Williams  
-- Íconos interactivos de redes  
-- Soporte light/dark mode  
-- Botón "Back to Top" animado  
-- Diseño minimalista y coherente
+Menú móvil tipo drawer con overlay
 
----
+Toggle de modo claro/oscuro
 
-# 🧱 Arquitectura del Proyecto
+Logo navegable hacia el Hero
 
-```bash
+Animación al hacer scroll (shrink + borde reactivo)
+
+✔ Hero Cinematográfico con Efectos Dinámicos
+
+Imagen full-width optimizada
+
+Parallax inteligente (desktop) y centrado estable en mobile
+
+Blur + brillo dinámico según scroll
+
+Overlay adaptable a light/dark mode
+
+Título principal con efecto glow reactivo al mouse
+
+Botones estilizados
+
+Animaciones de entrada suaves
+
+✔ Sección About — Ficha Técnica Estilo Ingeniería
+
+Fondo tipo paddock con parallax
+
+Overlay optimizado para lectura
+
+Tarjetas tipo panel técnico
+
+Fotografía con borde cyan + glow
+
+Animación de entrada por delays
+
+Scroll reveal progresivo
+
+✔ Sección Skills — Telemetría F1
+
+Fondo técnico con sensores y pantallas realistas
+
+Parallax en desktop
+
+Overlay con brillo adaptativo
+
+Tarjetas estilo glassmorphism
+
+Barras con gradiente Williams
+
+Íconos por habilidad
+
+Porcentajes profesionales reales
+
+Animaciones reveal independientes
+
+✔ Footer Moderno
+
+Línea superior estilo Williams
+
+Íconos interactivos de redes
+
+Botón "Back to Top" animado
+
+Adaptación total a modo claro/oscuro
+
+Diseño minimalista y coherente
+
+🧱 Arquitectura del Proyecto
 src/
 ├── assets/
 │   ├── images/
@@ -118,85 +148,105 @@ src/
 ├── App.jsx
 └── main.jsx
 
----
+⚙️ Tecnologías Utilizadas
+Frontend
 
-## ⚙️ Tecnologías Utilizadas
+React
 
-### **Frontend**
-- React  
-- Vite  
-- CSS Modules  
-- Variables CSS  
-- React Icons  
-- Framer Motion (próximamente)
+Vite
 
-### **Infraestructura**
-- Git & GitHub  
-- Vercel (CI/CD + hosting)  
+CSS Modules
 
----
+Variables CSS
 
-## 🛠️ Tech Stack
+React Icons
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+Intersection Observer
 
----
+Parallax Engine Custom
 
-## 🚧 Estado del Proyecto
+Framer Motion (próximamente)
+
+Infraestructura
+
+Git & GitHub
+
+Vercel (CI/CD + hosting)
+
+🛠️ Tech Stack
+
+
+
+
+
+
+
+
+
+
+
+
+🚧 Estado del Proyecto
 
 ✔ Implementado hasta ahora
 
-    Configuración base con Vite
-    Arquitectura modular
-    Modo claro/oscuro
-    Theme Toggle funcional
-    Navbar responsivo completo (escritorio + móvil)
-    Animaciones base de UI
-    Deploy activo en Vercel
-    Sincronización CI/CD con GitHub
+Configuración base con Vite
 
----
+Arquitectura modular
 
-🚧 Próximos Pasos
+Modo claro/oscuro avanzado
 
-    🔜 Skills Section
-    Tarjetas dinámicas tipo telemetría con barras animadas.
+Navbar responsivo
 
-    🔜 Projects Section
-    Integración con GitHub API o JSON local + tarjetas interactivas F1-style.
+Hero cinematográfico con parallax
 
-    🔜 Contact Section
-    Formulario con EmailJS y diseño futurista.
+About técnico con reveal
 
-    🔜 Animaciones Globales
-    Microinteracciones F1-style con Framer Motion.
+Skills estilo telemetría
 
-## 🧪 Cómo Ejecutar el Proyecto
+Footer con botón Back-to-Top
 
-### 1️⃣ Clonar repositorio
-```bash
+Animaciones globales
+
+Deploy activo en Vercel
+
+Sincronización CI/CD con GitHub
+
+🔜 Próximos Pasos
+🟦 Projects Section
+
+Tarjetas dinámicas tipo dashboard F1
+
+Consumo de GitHub API o JSON local
+
+Animaciones de hover estilo “panel de datos”
+
+🟦 Contact Section
+
+Formulario con EmailJS
+
+Diseño futurista tipo terminal
+
+Validación reactiva
+
+🟦 Animaciones Globales
+
+Microinteracciones avanzadas con Framer Motion
+
+Scrollspy para navegación viva
+
+🧪 Cómo Ejecutar el Proyecto
+1️⃣ Clonar repositorio
 git clone https://github.com/ea0627/portafolio-react.git
-```
 
 2️⃣ Instalar dependencias
-```bash
 npm install
-```
 
-3️⃣ Correr en modo desarrollo
-```bash
+3️⃣ Ejecutar en modo desarrollo
 npm run dev
-```
 
 4️⃣ Compilar para producción
-```bash
 npm run build
-```
 
 🌐 Deploy en Vercel
 
@@ -207,11 +257,13 @@ Versión en desarrollo:
 
 Este proyecto forma parte de mi proceso de aprendizaje profesional con:
 
-    TripleTen — Programa de Desarrollo Web
-    Alura Latam
-    Oracle Next Education (ONE) — G6
+TripleTen — Programa de Desarrollo Web
 
-Estas formaciones han sido clave para fortalecer mi base técnica, buenas prácticas y mentalidad de crecimiento.
+Alura Latam
+
+Oracle Next Education (ONE) — G6
+
+Estas formaciones han sido clave para fortalecer buenas prácticas, arquitectura escalable y mentalidad de crecimiento.
 
 🧑‍💻 Autor
 
@@ -219,6 +271,7 @@ Eduardo Amaya
 Desarrollador Front-End
 
 GitHub: https://github.com/ea0627
+
 LinkedIn: https://www.linkedin.com/in/eduardo-amaya-m/
 
 ⭐ Si te gusta este proyecto…
