@@ -96,6 +96,18 @@
     border-color: var(--accent-color);
 }
 
+/* ABOUT en modo claro */
+.light-theme .about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(2px) brightness(1.35);
+    z-index: 0;
+    pointer-events: none;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .about-wrapper {
@@ -112,4 +124,10 @@
     .spec-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ABOUT: overlay mejorado en modo claro */
+.light-theme .about-overlay {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(4px) brightness(1.25);
 }

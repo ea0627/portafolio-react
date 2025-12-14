@@ -44,6 +44,8 @@
   --backtotop-color: #00AEEF; /* Azul Williams brillante */
   --backtotop-hover-bg: rgba(0, 174, 255, 0.15);
   --backtotop-hover-shadow: rgba(0, 174, 255, 0.45);
+
+  --text-color: #0A0A0A;
 }
 
 /* -----------------------------------------------------
