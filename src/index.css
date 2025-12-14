@@ -1,31 +1,74 @@
+/* -----------------------------------------------------
+   VARIABLES GLOBALES
+----------------------------------------------------- */
 :root {
+  /* Tipografía base */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  /* Modo oscuro por defecto */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  /* Renderizado */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* ---------------------------
+     FOOTER
+  --------------------------- */
+  --footer-bg: #0A0A0A;
+  --footer-text: #F2F4F8;
+
+  /* ---------------------------
+     BACK TO TOP BUTTON
+  --------------------------- */
+  --backtotop-bg: rgba(10, 10, 10, 0.65);
+  --backtotop-color: #00AEEF; 
+  --backtotop-hover-bg: rgba(0, 174, 255, 0.3);
+  --backtotop-hover-shadow: rgba(0, 174, 255, 0.5);
 }
 
+/* -----------------------------------------------------
+   MODO CLARO ACTIVADO POR EL TOGGLE
+----------------------------------------------------- */
+.light-theme {
+  --footer-bg: #F2F4F8;
+  --footer-text: #0A0A0A;
+
+  --backtotop-bg: rgba(255, 255, 255, 0.75);
+  --backtotop-color: #00AEEF; /* Azul Williams brillante */
+  --backtotop-hover-bg: rgba(0, 174, 255, 0.15);
+  --backtotop-hover-shadow: rgba(0, 174, 255, 0.45);
+}
+
+/* -----------------------------------------------------
+   SCROLL SUAVE
+----------------------------------------------------- */
 html {
   scroll-behavior: smooth;
 }
 
+/* -----------------------------------------------------
+   ENLACES
+----------------------------------------------------- */
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
+/* -----------------------------------------------------
+   BASE DEL BODY
+----------------------------------------------------- */
 body {
   margin: 0;
   display: flex;
@@ -34,11 +77,17 @@ body {
   min-height: 100vh;
 }
 
+/* -----------------------------------------------------
+   TITULOS
+----------------------------------------------------- */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* -----------------------------------------------------
+   BOTONES (no afecta a tus botones personalizados)
+----------------------------------------------------- */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -50,23 +99,20 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/* -----------------------------------------------------
+   IMPORTANTE:
+   Se elimina el bloque prefers-color-scheme
+   porque interfería con tu sistema real de temas.
+----------------------------------------------------- */
+
+/* Si algún día quieres restaurarlo, lo recuperamos. */
