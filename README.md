@@ -9,13 +9,13 @@
 </p>
 
 Portafolio profesional construido con **React + Vite**, inspirado en la estética moderna, limpia y técnica de la escudería **Williams F1**.  
-Diseñado para ofrecer una experiencia visual cuidada, animaciones suaves, modo claro/oscuro, arquitectura escalable y despliegue automático con Vercel.
+Optimizado para ofrecer una experiencia visual premium, animaciones precisas, modo claro/oscuro avanzado y despliegue automático con Vercel.
 
 ---
 
 # 🏎️ Identidad Visual — Inspirado en Williams F1
 
-El diseño sigue una línea estética de ingeniería, precisión y telemetría:
+Paleta basada en los principios de ingeniería, precisión y telemetría:
 
 - **Cyan:** `#00AEEF`  
 - **Dark Blue:** `#002F5E`  
@@ -27,33 +27,33 @@ El diseño sigue una línea estética de ingeniería, precisión y telemetría:
 
 # 🌗 Modo Claro / Oscuro Avanzado
 
-El proyecto utiliza:
+Implementación basada en:
 
 - Variables CSS dinámicas  
 - Clase global `.light-theme`  
-- Persistencia estética coherente  
 - Ajustes automáticos de contraste  
-- Overlays inteligentes por sección  
-- Microinteracciones visuales según el modo  
+- Overlays inteligentes  
+- Microinteracciones sincronizadas con cada modo  
 
 ### Ajustes clave por sección:
 
-### ✔ Hero  
-- Brillo y blur dinámicos según scroll  
-- Contraste especial para modo claro  
+### ✔ Hero
+- Blur + brillo dinámico según scroll  
+- Mayor contraste en modo claro  
+- Interacción reactiva del glow al movimiento del mouse  
 
-### ✔ About  
-- Overlay técnico  
-- Fondo con parallax optimizado  
+### ✔ About
+- Fondo técnico con parallax  
+- Overlay inteligente para maximizar legibilidad  
 
-### ✔ Skills  
+### ✔ Skills
 - Fondo técnico con sensores  
-- Parallax en desktop  
-- Capa de lectura clara  
+- Parallax en escritorio  
+- Capa de lectura limpia en mobile  
 
-### ✔ Footer  
-- Contraste automático  
-- Iconos adaptados al tema activo  
+### ✔ Footer
+- Contraste adaptativo  
+- Iconos responsivos al modo activo  
 
 ---
 
@@ -61,43 +61,39 @@ El proyecto utiliza:
 
 ## ✔ Navbar Profesional F1-Style
 - Diseño translúcido + glassmorphism  
-- Menú móvil tipo drawer con overlay  
-- Toggle de modo claro/oscuro  
+- Menú móvil tipo drawer  
+- Overlay dinámico  
+- Toggle de tema  
 - Logo navegable hacia el Hero  
-- Animación al hacer scroll (shrink + borde reactivo)
+- Efecto shrink + borde reactivo al hacer scroll  
 
 ---
 
 ## ✔ Hero Cinematográfico con Efectos Dinámicos
 - Imagen full-width optimizada  
-- Parallax inteligente (desktop)  
+- Parallax en escritorio  
 - Centrado estable en mobile  
 - Blur + brillo dinámico según scroll  
-- Overlay adaptable a light/dark mode  
-- Título principal con efecto glow reactivo al mouse  
-- Botones estilizados  
-- Animaciones de entrada suaves  
+- Glow reactivo en el título  
+- Animaciones suaves de entrada  
 
 ---
 
-## ✔ Sección About — Ficha Técnica Estilo Ingeniería
+## ✔ About — Ficha Técnica Estilo Ingeniería
 - Fondo tipo paddock con parallax  
-- Overlay optimizado para lectura  
-- Tarjetas tipo panel técnico  
-- Fotografía con borde cyan + glow  
-- Animación de entrada por delays  
-- Scroll reveal progresivo  
+- Overlay técnico para lectura  
+- Tarjetas estilo panel de telemetría  
+- Glow cyan en fotografía  
+- Animación escalonada + scroll reveal  
 
 ---
 
-## ✔ Sección Skills — Telemetría F1
+## ✔ Skills — Telemetría F1
 - Fondo técnico con pantallas y sensores  
-- Parallax en escritorio  
 - Overlay + brillo adaptativo  
-- Tarjetas estilo glassmorphism  
-- Barras con gradiente Williams F1  
-- Porcentajes profesionales  
-- Animaciones reveal independientes  
+- Barras métricas con gradiente Williams  
+- Animaciones independientes por skill  
+- Tarjetas glass con hover técnico  
 
 ---
 
@@ -105,8 +101,8 @@ El proyecto utiliza:
 - Línea superior estilo Williams  
 - Íconos interactivos  
 - Botón “Back to Top” animado  
-- Soporte completo para light/dark mode  
-- Diseño discreto y minimalista  
+- Light/Dark mode  
+- Diseño minimalista y profesional  
 
 ---
 
@@ -145,21 +141,19 @@ Vite
 
 CSS Modules
 
-Variables CSS
-
 React Icons
 
-Intersection Observer
+Intersection Observer API
 
-Parallax Engine Custom
+Parallax Engine custom
 
-Framer Motion (pronto)
+Framer Motion (muy pronto)
 
 Infraestructura
 
 Git & GitHub
 
-Vercel (CI/CD + hosting)
+Vercel (CI/CD + Hosting)
 
 🚧 Estado del Proyecto
 ✔ Implementado hasta ahora
@@ -174,7 +168,7 @@ Navbar responsivo
 
 Hero cinematográfico
 
-About técnico con reveal
+About técnico
 
 Skills estilo telemetría
 
@@ -184,30 +178,15 @@ Animaciones globales
 
 Deploy en Vercel
 
-CI/CD con GitHub
+CI/CD vía GitHub
 
 🔜 Próximos Pasos
-🟦 Projects Section
-
-Tarjetas dinámicas tipo dashboard F1
-
-Consumo de GitHub API o JSON local
-
-Animaciones hover estilo panel técnico
-
-🟦 Contact Section
-
-Formulario con EmailJS
-
-Estilo futurista tipo terminal
-
-Validación reactiva
 
 🟦 Animaciones Globales
 
-Microinteracciones avanzadas con Framer Motion
+Microinteracciones con Framer Motion
 
-Scrollspy para navegación activa
+Scrollspy en navegación
 
 🧪 Cómo Ejecutar el Proyecto
 1️⃣ Clonar repositorio
@@ -224,12 +203,12 @@ npm run build
 
 🌐 Deploy en Vercel
 
-Versión en desarrollo:
+Versión actual:
 👉 https://portafolio-ea.vercel.app
 
 🎓 Formaciones Relacionadas
 
-Este proyecto forma parte de mi proceso de aprendizaje profesional con:
+Este proyecto hace parte de mi formación profesional en:
 
 TripleTen — Desarrollo Web
 
@@ -237,18 +216,18 @@ Alura Latam
 
 Oracle Next Education (ONE) — G6
 
-Formaciones clave para fortalecer arquitectura, buenas prácticas y mentalidad de crecimiento.
+Fundamentales para arquitectura, buenas prácticas y crecimiento técnico.
 
 🧑‍💻 Autor
 
 Eduardo Amaya
 Desarrollador Front-End
 
-GitHub: https://github.com/ea0627
+🔗 GitHub: https://github.com/ea0627
 
-LinkedIn: https://www.linkedin.com/in/eduardo-amaya-m/
+🔗 LinkedIn: https://www.linkedin.com/in/eduardo-amaya-m/
 
 ⭐ Si te gusta este proyecto…
 
-No dudes en dejar una estrella ⭐ en el repositorio.
-¡Seguimos construyendo! 🏎️⚡💙
+¡Deja una estrella ⭐ en el repositorio!
+Seguimos construyendo 🚀🏎️💙
