@@ -1,14 +1,18 @@
 import ReactGA from "react-ga4";
 
-// Inicializar Google Analytics
 export const initGA = () => {
-  ReactGA.initialize("G-PZYL1GB5IT"); // 👉 TU ID DE GOOGLE ANALYTICS
+  const gaId = import.meta.env.VITE_GA_ID;
+
+  if (!gaId) return;
+  ReactGA.initialize(gaId);
 };
 
-// Registrar vistas de página
 export const trackPageView = (url) => {
-    ReactGA.send({
-        hitType: "pageview",
-        page: url,
-    });
+  const gaId = import.meta.env.VITE_GA_ID;
+
+  if (!gaId) return;
+  ReactGA.send({
+    hitType: "pageview",
+    page: url,
+  });
 };
