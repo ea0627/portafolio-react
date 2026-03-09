@@ -1,26 +1,26 @@
 import "./projects.css";
+import { deployments } from "../../config/deployments";
 import { useGithubProjects } from "../../hooks/useGithubProjects";
-
-const deployments = {};
 
 const Projects = () => {
     const { repos, loading, error } = useGithubProjects("ea0627");
 
     // Función Demo Inteligente PRO (robusta)
     const getDemoUrl = (repo) => {
-        // 1️⃣ homepage manual desde GitHub
+        // 1️⃣ homepage manual desde GitHub (si existe y no es vacío)
         const homepage = repo.homepage?.trim();
         if (homepage) return homepage;
 
-        // 2️⃣ GitHub Pages calculado/enriquecido desde el hook
+        // 2️⃣ GitHub Pages (si el repo realmente tiene Pages)
         if (repo.githubPages) return repo.githubPages;
 
-        // 3️⃣ Vercel registrado manualmente
-        if (deployments?.[repo.name]) return deployments[repo.name];
+        // 3️⃣ Deploys manuales (Vercel u otros) definidos por ti
+        const manualDeploy = deployments?.[repo.name]?.trim();
+        if (manualDeploy) return manualDeploy;
 
-        // 4️⃣ Fallback Vercel automático (puede fallar si el proyecto no existe en Vercel)
-        return `https://${repo.name}.vercel.app`;
-    };
+        // 4️⃣ Sin demo real → no mostrar botón Demo
+        return null;
+        };
 
   const showLoading = loading;
   const showError = !loading && Boolean(error);
