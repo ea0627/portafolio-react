@@ -82,6 +82,7 @@ const Projects = () => {
                                         <a
                                             href={repo.html_url}
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="btn-project"
                                         >
                                             Repositorio
@@ -91,6 +92,7 @@ const Projects = () => {
                                             <a
                                                 href={demoUrl}
                                                 target="_blank"
+                                                rel="noopener noreferrer"
                                                 className="btn-project secondary"
                                             >
                                                 Demo
