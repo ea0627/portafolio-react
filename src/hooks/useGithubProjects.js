@@ -1,57 +1,57 @@
 import { useEffect, useState } from "react";
 
-// Función para detectar GitHub Pages automáticamente
-const detectGithubPages = async (username, repoName) => {
-    const url = `https://${username}.github.io/${repoName}/`;
-
-    try {
-        const res = await fetch(url, { method: "HEAD" });
-
-        if (res.ok) {
-            return url; // Página encontrada
-        }
-    } catch (err) {
-        // Silent fail
-    }
-
-    return null; // No existe GitHub Pages
-};
-
 export const useGithubProjects = (username) => {
-    const [repos, setRepos] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
-    useEffect(() => {
-        const fetchRepos = async () => {
-            try {
-                const res = await fetch(
-                    `https://api.github.com/users/${username}/repos?sort=updated&direction=desc&per_page=100`
-                );
+  useEffect(() => {
+    if (!username) return;
 
-                const data = await res.json();
+    const fetchRepos = async () => {
+      setLoading(true);
+      setError("");
 
-                // Detectar GitHub Pages automáticamente
-                const reposWithPages = await Promise.all(
-                    data.map(async (repo) => {
-                        const ghPagesUrl = await detectGithubPages(username, repo.name);
+      try {
+        const res = await fetch(
+          `https://api.github.com/users/${username}/repos?sort=updated&direction=desc&per_page=100`
+        );
 
-                        return {
-                            ...repo,
-                            githubPages: ghPagesUrl
-                        };
-                    })
-                );
+        if (!res.ok) {
+          // Ej: rate limit (403), no encontrado (404), etc.
+          throw new Error(`GitHub API error: ${res.status}`);
+        }
 
-                setRepos(reposWithPages);
-            } catch (error) {
-                console.error("Error fetching repos:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
+        const data = await res.json();
 
-        fetchRepos();
-    }, [username]);
+        const normalized = data.map((repo) => {
+          const homepage = repo.homepage?.trim();
 
-    return { repos, loading };
+          const githubPages =
+            homepage
+              ? homepage
+              : repo.has_pages
+                ? `https://${username}.github.io/${repo.name}/`
+                : null;
+
+          return {
+            ...repo,
+            githubPages,
+          };
+        });
+
+        setRepos(normalized);
+      } catch (err) {
+        console.error("Error fetching repos:", err);
+        setError("No se pudieron cargar los proyectos en este momento. Intenta más tarde.");
+        setRepos([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchRepos();
+  }, [username]);
+
+  return { repos, loading, error };
 };
