@@ -8,226 +8,111 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
-Portafolio profesional construido con **React + Vite**, inspirado en la estética moderna, limpia y técnica de la escudería **Williams F1**.  
-Optimizado para ofrecer una experiencia visual premium, animaciones precisas, modo claro/oscuro avanzado y despliegue automático con Vercel.
+Portafolio profesional construido con **React + Vite**, inspirado en una estética moderna, limpia y técnica (estilo **Williams F1**).  
+Incluye **modo claro/oscuro**, secciones modulares y una galería de proyectos cargada dinámicamente desde GitHub.
+
+## 🌐 Demo (Producción)
+👉 https://portafolio-ea.vercel.app/
 
 ---
 
-# 🏎️ Identidad Visual — Inspirado en Williams F1
+## 🏎️ Identidad visual (Williams F1)
+Paleta basada en principios de ingeniería, precisión y telemetría:
 
-Paleta basada en los principios de ingeniería, precisión y telemetría:
-
-- **Cyan:** `#00AEEF`  
-- **Dark Blue:** `#002F5E`  
-- **Soft White:** `#F2F4F8`  
-- **Black:** `#0A0A0A`  
-- **Sky Blue:** `#38C7FF`  
-
----
-
-# 🌗 Modo Claro / Oscuro Avanzado
-
-Implementación basada en:
-
-- Variables CSS dinámicas  
-- Clase global `.light-theme`  
-- Ajustes automáticos de contraste  
-- Overlays inteligentes  
-- Microinteracciones sincronizadas con cada modo  
-
-### Ajustes clave por sección:
-
-### ✔ Hero
-- Blur + brillo dinámico según scroll  
-- Mayor contraste en modo claro  
-- Interacción reactiva del glow al movimiento del mouse  
-
-### ✔ About
-- Fondo técnico con parallax  
-- Overlay inteligente para maximizar legibilidad  
-
-### ✔ Skills
-- Fondo técnico con sensores  
-- Parallax en escritorio  
-- Capa de lectura limpia en mobile  
-
-### ✔ Footer
-- Contraste adaptativo  
-- Iconos responsivos al modo activo  
+- **Cyan:** `#00AEEF`
+- **Dark Blue:** `#002F5E`
+- **Soft White:** `#F2F4F8`
+- **Black:** `#0A0A0A`
+- **Sky Blue:** `#38C7FF`
 
 ---
 
-# 🏁 Avance Actual del Proyecto
-
-## ✔ Navbar Profesional F1-Style
-- Diseño translúcido + glassmorphism  
-- Menú móvil tipo drawer  
-- Overlay dinámico  
-- Toggle de tema  
-- Logo navegable hacia el Hero  
-- Efecto shrink + borde reactivo al hacer scroll  
+## ✨ Funcionalidades principales
+- Navbar tipo F1 (glassmorphism, drawer en móvil, efecto shrink en scroll)
+- Hero cinematográfico con efectos suaves y comportamiento responsive
+- Sección About estilo “ficha técnica”
+- Skills tipo telemetría (barras y microinteracciones)
+- Projects: repositorios desde GitHub + enlaces a repo y demo (solo cuando existe)
+- Modo claro/oscuro con variables CSS y contraste adaptativo
 
 ---
 
-## ✔ Hero Cinematográfico con Efectos Dinámicos
-- Imagen full-width optimizada  
-- Parallax en escritorio  
-- Centrado estable en mobile  
-- Blur + brillo dinámico según scroll  
-- Glow reactivo en el título  
-- Animaciones suaves de entrada  
+## 🧰 Tecnologías
+**Frontend**
+- React
+- Vite
+- JavaScript
+- CSS
+- React Icons
+- Intersection Observer API
+
+**Infra**
+- Git & GitHub
+- Vercel (CI/CD y hosting)
 
 ---
 
-## ✔ About — Ficha Técnica Estilo Ingeniería
-- Fondo tipo paddock con parallax  
-- Overlay técnico para lectura  
-- Tarjetas estilo panel de telemetría  
-- Glow cyan en fotografía  
-- Animación escalonada + scroll reveal  
+## 🧪 Cómo ejecutar el proyecto (local)
+1) Clonar repositorio
 
----
+git clone https://github.com/ea0627/portafolio-react.git
+cd portafolio-react
 
-## ✔ Skills — Telemetría F1
-- Fondo técnico con pantallas y sensores  
-- Overlay + brillo adaptativo  
-- Barras métricas con gradiente Williams  
-- Animaciones independientes por skill  
-- Tarjetas glass con hover técnico  
+2) Instalar dependencias
 
----
+npm install
 
-## ✔ Footer Moderno
-- Línea superior estilo Williams  
-- Íconos interactivos  
-- Botón “Back to Top” animado  
-- Light/Dark mode  
-- Diseño minimalista y profesional  
+3) Ejecutar en desarrollo
 
----
+npm run dev
 
-# 🧱 Arquitectura del Proyecto
+4) Compilar para producción
 
-```bash
+npm run build
+npm run preview
+
+🧱 Estructura del proyecto
+
+La estructura puede evolucionar con nuevas secciones/animaciones.
+
 src/
 ├── assets/
-│   ├── images/
-│   └── icons/
 ├── components/
 │   ├── Navbar/
 │   ├── Hero/
 │   ├── About/
 │   ├── Skills/
-│   ├── Projects/
-│   └── Contact/
-├── data/
-│   └── projects.json
+│   └── Projects/
+├── config/
+│   └── deployments.js
 ├── hooks/
-│   └── useFetchProjects.js
-├── utils/
-│   └── animations.js
+│   └── useGithubProjects.js
 ├── styles/
-│   ├── global.css
-│   └── variables.css
 ├── App.jsx
 └── main.jsx
 
-⚙️ Tecnologías Utilizadas
-Frontend
+🧭 Estado del proyecto
 
-React
+✅ Proyecto en producción, estable y optimizado para portafolio.
 
-Vite
+Próximos pasos (opcional)
 
-CSS Modules
+🔩 Animaciones globales (Framer Motion)
+🔩 Scrollspy en navegación
+🔩 Mejoras de accesibilidad (aria/teclado)
 
-React Icons
-
-Intersection Observer API
-
-Parallax Engine custom
-
-Framer Motion (muy pronto)
-
-Infraestructura
-
-Git & GitHub
-
-Vercel (CI/CD + Hosting)
-
-🚧 Estado del Proyecto
-✔ Implementado hasta ahora
-
-Configuración base con Vite
-
-Arquitectura modular
-
-Modo claro/oscuro avanzado
-
-Navbar responsivo
-
-Hero cinematográfico
-
-About técnico
-
-Skills estilo telemetría
-
-Footer con Back-to-Top
-
-Animaciones globales
-
-Deploy en Vercel
-
-CI/CD vía GitHub
-
-🔜 Próximos Pasos
-
-🟦 Animaciones Globales
-
-Microinteracciones con Framer Motion
-
-Scrollspy en navegación
-
-🧪 Cómo Ejecutar el Proyecto
-1️⃣ Clonar repositorio
-git clone https://github.com/ea0627/portafolio-react.git
-
-2️⃣ Instalar dependencias
-npm install
-
-3️⃣ Ejecutar en modo desarrollo
-npm run dev
-
-4️⃣ Compilar para producción
-npm run build
-
-🌐 Deploy en Vercel
-
-Versión actual:
-👉 https://portafolio-ea.vercel.app
-
-🎓 Formaciones Relacionadas
+🎓 Formación relacionada
 
 Este proyecto hace parte de mi formación profesional en:
 
-TripleTen — Desarrollo Web
-
-Alura Latam
-
-Oracle Next Education (ONE) — G6
-
-Fundamentales para arquitectura, buenas prácticas y crecimiento técnico.
+🔩 TripleTen — Desarrollo Web
+🔩 Alura Latam
+🔩 Oracle Next Education (ONE) — G6
 
 🧑‍💻 Autor
 
-Eduardo Amaya
-Desarrollador Front-End
+Eduardo Amaya — Desarrollador Front-End
+GitHub: https://github.com/ea0627
+LinkedIn: https://www.linkedin.com/in/eduardo-amaya-m/
 
-🔗 GitHub: https://github.com/ea0627
-
-🔗 LinkedIn: https://www.linkedin.com/in/eduardo-amaya-m/
-
-⭐ Si te gusta este proyecto…
-
-¡Deja una estrella ⭐ en el repositorio!
-Seguimos construyendo 🚀🏎️💙
+⭐ Si te gusta este proyecto, ¡deja una estrella en el repositorio!
