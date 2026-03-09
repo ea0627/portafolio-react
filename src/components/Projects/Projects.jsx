@@ -1,4 +1,4 @@
-import "./Projects.css";
+import "./projects.css";
 import { useGithubProjects } from "../../hooks/useGithubProjects";
 
 const deployments = {};
