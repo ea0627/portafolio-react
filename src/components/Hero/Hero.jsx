@@ -90,6 +90,7 @@ const Hero = () => {
                 <div className="hero-buttons">
                     <a href="#projects" className="btn-primary">Ver proyectos</a>
                     <a href="#about" className="btn-secondary">Sobre mí</a>
+                    <a href="/CV_Eduardo_Amaya.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary">Ver CV</a>
                 </div>
             </div>
         </section>
